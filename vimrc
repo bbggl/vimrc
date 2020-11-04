@@ -13,7 +13,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-"color snazzy
 
 
 
@@ -117,6 +116,7 @@ call plug#begin('~/.vim/plugged')
 
 
 Plug 'vim-airline/vim-airline'
+Plug 'connorholyday/vim-snazzy'
 
 
 " File navigation
@@ -188,6 +188,7 @@ Plug 'fadein/vim-FIGlet'
 call plug#end()
 
 
+"color snazzy
 
 
 
@@ -251,6 +252,41 @@ func! CompileRunGcc()
   endif 
 endfunc 
 
+
+
+
+
+
+" ===
+" === NERDTree
+" ===
+map tt :NERDTreeToggle<CR>
+let NERDTreeMapOpenExpl = ""
+let NERDTreeMapUpdir = ""
+let NERDTreeMapUpdirKeepOpen = "l"
+let NERDTreeMapOpenSplit = ""
+let NERDTreeOpenVSplit = ""
+let NERDTreeMapActivateNode = "i"
+let NERDTreeMapOpenInTab = "o"
+let NERDTreeMapPreview = ""
+let NERDTreeMapCloseDir = "n"
+let NERDTreeMapChangeRoot = "y"
+
+
+" ==
+" == NERDTree-git
+" ==
+"let g:NERDTreeIndicatorMapCustom = {
+"    \ "Modified"  : "✹",
+"    \ "Staged"    : "✚",
+"    \ "Untracked" : "✭",
+"    \ "Renamed"   : "➜",
+"    \ "Unmerged"  : "═",
+"    \ "Deleted"   : "✖",
+"    \ "Dirty"     : "✗",
+"    \ "Clean"     : "✔︎",
+"    \ "Unknown"   : "?"
+"    \ }
 
 
 
