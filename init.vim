@@ -223,7 +223,7 @@ Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or 
 "Plug 'kana/vim-textobj-user'
 "Plug 'fadein/vim-FIGlet'
 
-
+Plug 'voldikss/vim-floaterm'
 
 
 
@@ -234,12 +234,30 @@ Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or 
 call plug#end()
 
 
-"colors snazzy
+colors snazzy
 
 
-
-
-
+" ===
+" === floaterm
+" ===
+"let g:floaterm_keymap_new    = '<F9>'
+"let g:floaterm_keymap_prev   = '<F10>'
+"let g:floaterm_keymap_next   = '<F11>'
+"let g:floaterm_keymap_toggle = '<F12>'
+nnoremap   <silent>   <F7>    :FloatermNew<CR>
+nnoremap   <silent>   tr    :FloatermNew ranger<CR>
+nnoremap   <silent>   tf    :FloatermNew fzf<CR>
+tnoremap   <silent>   <F7>    <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent>   <F8>    :FloatermPrev<CR>
+tnoremap   <silent>   <F8>    <C-\><C-n>:FloatermPrev<CR>
+nnoremap   <silent>   <F9>    :FloatermNext<CR>
+tnoremap   <silent>   <F9>    <C-\><C-n>:FloatermNext<CR>
+nnoremap   <silent>   <F10>   :FloatermToggle<CR>
+tnoremap   <silent>   <F10>   <C-\><C-n>:FloatermToggle<CR>
+"let g:floaterm_keymap_new    = '<leader>t'
+"let g:floaterm_keymap_prev   = '<leader>j'
+"let g:floaterm_keymap_next   = '<leader>l'
+"let g:floaterm_keymap_toggle = '<leader>q'
 
 " ===
 " === MarkdownPreview

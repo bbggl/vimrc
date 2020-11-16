@@ -44,10 +44,16 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "json",
         "c",
+        "cpp",
+        "html",
+        "markdown",
+        "python",
+        "java",
+        "go"
+    ],
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnTypeFiletypes": [
         "cpp"
     ]
-
-
-
     //"coc.preferences.formatOnInsertLeave": true
 }
