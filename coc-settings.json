@@ -1,4 +1,5 @@
 {
+    "coc.preferences.snippetStatusText": "Ⓢ ",
     "coc.preferences.extensionUpdateCheck": "daily",
     "suggest.noselect": true,
     "suggest.enablePreselect": false,
@@ -51,9 +52,13 @@
         "java",
         "go"
     ],
-    "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnTypeFiletypes": [
-        "cpp"
+    "snippets.ultisnips.directories": [
+        "$HOME/.config/nvim/Ultisnips/",
+        "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
     ]
+    //"coc.preferences.formatOnType": true,
+    //"coc.preferences.formatOnTypeFiletypes": [
+    //    "cpp"
+    //]
     //"coc.preferences.formatOnInsertLeave": true
 }

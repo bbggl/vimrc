@@ -81,6 +81,8 @@ map <LEADER>l <C-w>l
 map <LEADER>i <C-w>k
 map <LEADER>j <C-w>h
 map <LEADER>k <C-w>j
+map sv <C-w>t<C-w>K
+map sh <C-w>t<C-w>H
 map sl :set splitright<CR>:vsplit<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
 map si :set nosplitbelow<CR>:split<CR>
@@ -162,7 +164,7 @@ Plug 'w0rp/ale'
  
 " Auto Complete
 "Plug 'Caloric/YouCompleteMe'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim',{'branch': 'release'}
 
 " Undo Tree
 "Plug 'mbbill/undotree/'
@@ -178,16 +180,16 @@ Plug 'mhinz/vim-signify'
 Plug 'gisphm/vim-gitignore', { 'for': ['gitignore', 'vim-plug'] }
 
 " HTML, CSS, JavaScript, PHP, JSON, etc.
-"Plug 'elzr/vim-json'
+Plug 'elzr/vim-json'
 "Plug 'hail2u/vim-css3-syntax'
 Plug 'spf13/PIV', { 'for' :['php', 'vim-plug'] }
 Plug 'gko/vim-coloresque', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
 "Plug 'pangloss/vim-jaosascript', { 'for' :['javascript', 'vim-plug'] }
-"Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
-
-
-
+"snippet
+"Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 
 " Python
@@ -297,8 +299,16 @@ let g:mkdp_page_title = '「${name}」'
 
 
 
-
-
+" ===
+" ===coc-snippets
+" ===
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-e> <Plug>(coc-snippets-select)
+let g:coc_snippet_next = '<c-e>'
+let g:coc_snippet_prev = '<c-n>'
+imap <C-e> <Plug>(coc-snippets-expand-jump)
+let g:snips_author = 'David Chen'
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 
 
@@ -697,6 +707,12 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "tx figlet
 "% now file
 "% to html   to html
+"<leader>fs spellcheck
+"<leader>fd find simple
+">> 缩进
+"
+"
+ 
 "
 "
 "
@@ -704,9 +720,5 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "
 "
 "
-"
-"
-"
-"
-"
-"
+source ~/.config/nvim/TeTrIs.vim  "a game
+map <silent> ta :source ~/.config/nvim/badapple/badapple.vim<cr>
