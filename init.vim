@@ -1,3 +1,11 @@
+"
+" __  __        __     _____ __  __ ____   ____ 
+"|  \/  |_   _  \ \   / /_ _|  \/  |  _ \ / ___|
+"| |\/| | | | |  \ \ / / | || |\/| | |_) | |    
+"| |  | | |_| |   \ V /  | || |  | |  _ <| |___ 
+"|_|  |_|\__, |    \_/  |___|_|  |_|_| \_\\____|
+"        |___/                                  
+"
 set nocompatible   """最基础的(关闭兼容vi,有一定副作用,所以放在行首)
 let mapleader=" "
 syntax on
@@ -63,8 +71,8 @@ exec "nohlsearch"
 
 
 
-
-
+map tx :r !figlet 
+map ,f :<esc>/<++><cr>:nohlsearch<cr>c4l
 map Q :q<CR>
 map W :w<CR>
 map E :q!<CR>
@@ -77,8 +85,10 @@ map sl :set splitright<CR>:vsplit<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
 map si :set nosplitbelow<CR>:split<CR>
 map sk :set splitbelow<CR>:split<CR>
-""map <LEADER>fd /\(\<\w\+\>\)\_s*\1<CR>
-""map <LEADER>fs :set spell!<CR>
+map <LEADER>fd /\(\<\w\+\>\)\_s*\1<CR>
+map <LEADER>fs :set spell!<CR>
+inoremap <C-x> <esc>ea<C-x>s
+"z=
 map ` ~h
 map ; :
 ""map <LEADER><LEADER> <ESC>/<++><CR>:nohlsearch<CR>c4l
@@ -151,7 +161,7 @@ Plug 'w0rp/ale'
 
  
 " Auto Complete
-"Plug 'Valloric/YouCompleteMe'
+"Plug 'Caloric/YouCompleteMe'
 Plug 'neoclide/coc.nvim'
 
 " Undo Tree
@@ -669,3 +679,34 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 "" Resume latest coc list.
 "nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+"
+"
+"<++>
+"gf go file
+"i <C-x> autospell
+"<leader>h help
+"gd go to definition
+"<leader>rn rename
+"s jkli
+"tu newtab
+"<leader> jilk
+"tt nerdtree
+"tr floaterm ra
+"tf floaterm fzf
+"<leader>j l go left/next wrong
+"tx figlet
+"% now file
+"% to html   to html
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
