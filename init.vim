@@ -130,10 +130,10 @@ noremap N Nzz
 vnoremap Y "+y
 vnoremap P "+p
 
-inoremap <C-i> <Up>
-inoremap <C-k> <Down>
-inoremap <C-l> <Right>
-inoremap <C-j> <Left>
+"inoremap <C-i> <Up>
+"inoremap <C-k> <Down>
+"inoremap <C-l> <Right>
+"inoremap <C-j> <Left>
 "inoremap <C-u> <PageUp>
 "inoremap <C-o> <PageDown>
 "inoremap <C-j> <ESC>0i
@@ -302,14 +302,21 @@ let g:mkdp_page_title = '「${name}」'
 " ===
 " ===coc-snippets
 " ===
-imap <C-l> <Plug>(coc-snippets-expand)
-vmap <C-e> <Plug>(coc-snippets-select)
-let g:coc_snippet_next = '<c-e>'
-let g:coc_snippet_prev = '<c-n>'
-imap <C-e> <Plug>(coc-snippets-expand-jump)
-let g:snips_author = 'David Chen'
-autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+"imap <C-l> <Plug>(coc-snippets-expand)
+"vmap <C-e> <Plug>(coc-snippets-select)
+"let g:coc_snippet_next = '<c-e>'
+"let g:coc_snippet_prev = '<c-n>'
+"imap <C-e> <Plug>(coc-snippets-expand-jump)
+"let g:snips_author = 'David Chen'
+"autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
+imap <C-s> <Plug>(coc-snippets-expand)
+vmap <C-l> <Plug>(coc-snippets-select)
+let g:coc_snippet_next = '<C-l>'
+let g:coc_snippet_prev = '<C-k>'
+imap <C-l> <Plug>(coc-snippets-expand-jump)
+let g:snips_author = 'plx'
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 
 
@@ -711,6 +718,16 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "<leader>fd find simple
 ">> 缩进
 "
+"
+"
+"
+"<c-up down>many 
+"<c-n> a word
+"q 离开这个并选中下一个
+"Q 离开这个并回到上一个选中的
+"[   ]上一个和下一个
+"n 选中下一个
+"N 选中上一个
 "
  
 "

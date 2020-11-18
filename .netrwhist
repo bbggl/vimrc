@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/bbggl/.config/nvim/plugged/vim-snippets/UltiSnips'
 let g:netrw_dirhist_5='/home/bbggl/.config/nvim/.git'
 let g:netrw_dirhist_4='/home/bbggl/.config/i3'
 let g:netrw_dirhist_3='/home/bbggl/.config/coc/extensions/node_modules/coc-pairs'
