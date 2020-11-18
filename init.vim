@@ -188,7 +188,7 @@ Plug 'gko/vim-coloresque', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'c
 Plug 'mattn/emmet-vim'
 
 "snippet
-"Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 
@@ -720,5 +720,5 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "
 "
 "
-source ~/.config/nvim/TeTrIs.vim  "a game
+source ~/.config/nvim/TeTrIs.vim  "a game te
 map <silent> ta :source ~/.config/nvim/badapple/badapple.vim<cr>
