@@ -177,7 +177,7 @@ Plug 'neoclide/coc.nvim',{'branch': 'release'}
 Plug 'rhysd/conflict-marker.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-Plug 'gisphm/vim-gitignore', { 'for': ['gitignore', 'vim-plug'] }
+"Plug 'gisphm/vim-gitignore', { 'for': ['gitignore', 'vim-plug'] }
 
 " HTML, CSS, JavaScript, PHP, JSON, etc.
 Plug 'elzr/vim-json'
@@ -185,10 +185,10 @@ Plug 'elzr/vim-json'
 Plug 'spf13/PIV', { 'for' :['php', 'vim-plug'] }
 Plug 'gko/vim-coloresque', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
 "Plug 'pangloss/vim-jaosascript', { 'for' :['javascript', 'vim-plug'] }
-Plug 'mattn/emmet-vim'
+"Plug 'mattn/emmet-vim'
 
 "snippet
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 
