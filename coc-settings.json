@@ -55,7 +55,8 @@
     "snippets.ultisnips.directories": [
         "$HOME/.config/nvim/Ultisnips/",
         "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
-    ]
+    ],
+    "java.errors.incompleteClasspath.severity": "ignore"
     //"coc.preferences.formatOnType": true,
     //"coc.preferences.formatOnTypeFiletypes": [
     //    "cpp"

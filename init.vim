@@ -226,9 +226,9 @@ Plug 'mg979/vim-visual-multi',{'branch':'master'}
 "Plug 'terryma/vim-multiple-cursors'
 "Plug 'junegunn/goyo.vim' " distraction free writing mode
 Plug 'tpope/vim-surround' " type ysks' to wrap the word with '' or type cs'` to change 'word' to `word`
-"Plug 'godlygeek/tabular' " type ;Tabularize /= to align the =
+Plug 'godlygeek/tabular' " type ;Tabularize /= to align the =
 Plug 'gcmt/wildfire.vim' " in Visual mode, type i' to select all text in '', or type i) i] i} ip
-"Plug 'scrooloose/nerdcommenter' " in <space>cc to comment a line
+Plug 'scrooloose/nerdcommenter' " in <space>cc to comment a line
 
 " Dependencies
 "Plug 'MarcWeber/vim-addon-mw-utils'
@@ -728,8 +728,8 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "[   ]上一个和下一个
 "n 选中下一个
 "N 选中上一个
-"
- 
+"space cc  a line  space ci 分别切换状态  space c space 全部切换为  默认为取消
+""space cy 注释并复制
 "
 "
 "
