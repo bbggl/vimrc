@@ -185,7 +185,7 @@ Plug 'elzr/vim-json'
 Plug 'spf13/PIV', { 'for' :['php', 'vim-plug'] }
 Plug 'gko/vim-coloresque', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] }
 "Plug 'pangloss/vim-jaosascript', { 'for' :['javascript', 'vim-plug'] }
-"Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
 "snippet
 "Plug 'SirVer/ultisnips'
@@ -212,7 +212,11 @@ Plug 'dkarter/bullets.vim'
 
 
 
+"emmet-vim
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
+"let g:user_emmet_leader_key='<C-y>'
 
 
 
@@ -715,6 +719,7 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "% now file
 "% to html   to html
 "<leader>fs spellcheck
+"<c-x> complete a word 
 "<leader>fd find simple
 ">> 缩进
 "
@@ -728,9 +733,13 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 "[   ]上一个和下一个
 "n 选中下一个
 "N 选中上一个
-"space cc  a line  space ci 分别切换状态  space c space 全部切换为  默认为取消
-""space cy 注释并复制
+"space cc  aline  space ci 分别切换状态  space c space 全部切换为  默认为取消
+"space cy 注释并复制  space ca 转换注释的符号 /**/ //    space cA到行尾添加注释并进入编辑模式   
+"space cs 添加性感的注释.. 
 "
+"
+"
+"cs ds  yss  vS   ysw ysf ysiw 
 "
 "
 "
